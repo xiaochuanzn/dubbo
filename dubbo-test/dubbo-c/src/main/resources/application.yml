@@ -1,0 +1,9 @@
+server:
+  port: 9001
+dubbo:
+  scan:
+    basePackages: com.fxm
+  application:
+    name: consumer-user   #定义消费者名称
+  registry:               #注册中心地址
+    address: zookeeper://192.168.5.2:2181?backup=192.168.5.2:2182,192.168.5.2:2183
