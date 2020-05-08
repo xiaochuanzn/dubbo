@@ -7,7 +7,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/cjtdb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
     username: root
-    password: xcrootxc
+    password: root
     
 dubbo:
   scan:
@@ -15,7 +15,7 @@ dubbo:
   application:
     name: provider-user     #指定服务名称(必须指定)
   registry:
-    address: zookeeper://192.168.5.2:2181?backup=192.168.5.2:2182,192.168.5.2:2183
+    address: zookeeper://192.168.15.2:2181?backup=192.168.15.2:2182,192.168.15.2:2183
   protocol:  #指定协议
     name: dubbo  #使用dubbo协议(tcp-ip)  web-controller直接调用sso-Service
     port: 20880  #服务链接时的端口号
